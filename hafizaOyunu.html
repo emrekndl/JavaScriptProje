@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAFIZA OYUNU</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<script src="oyunJS.js"></script>
+<style>
+     * {margin:0px; padding:0px;}
+     body {font-family:"Open Sans", sans-serif;}
+     #game { width:640px; padding:30px; }
+     #game div {width:100px; height:100px; float:left; border:3px solid rgb(252, 252, 252);}
+     .mavi {background:#66ADE3; }
+     #puan { font-size:20px; color:rgb(23, 140, 223);}
+	 #p1 { font-size:15px;}
+	 #p2 { font-size:15px;}
+	 #hak { font-size:25px; color:crimson; }
+	 p{ font-size:15px; color:rgb(199, 72, 14); }
+	 span{ font-size:30px; color:black; font-weight:bold; }
+	 table{ border-color:slategray; border-style:dashed;}
+</style>
+
+<body onLoad="oyunBaslat()" bgcolor="orange">
+<center>
+
+<span>Memory Matrix</span>
+	
+<div id="game">
+
+	<div id="hucre11" onclick="tikKontrol(1,1)" class="mavi"></div>
+	<div id="hucre12" onclick="tikKontrol(1,2)" class="mavi"></div>
+	<div id="hucre13" onclick="tikKontrol(1,3)" class="mavi"></div>
+	<div id="hucre14" onclick="tikKontrol(1,4)" class="mavi"></div>
+	<div id="hucre15" onclick="tikKontrol(1,5)" class="mavi"></div>
+	<div id="hucre16" onclick="tikKontrol(1,6)" class="mavi"></div>
+	<div id="hucre21" onclick="tikKontrol(2,1)" class="mavi"></div>
+	<div id="hucre22" onclick="tikKontrol(2,2)" class="mavi"></div>
+	<div id="hucre23" onclick="tikKontrol(2,3)" class="mavi"></div>
+	<div id="hucre24" onclick="tikKontrol(2,4)" class="mavi"></div>
+	<div id="hucre25" onclick="tikKontrol(2,5)" class="mavi"></div>
+	<div id="hucre26" onclick="tikKontrol(2,6)" class="mavi"></div>
+	<div id="hucre31" onclick="tikKontrol(3,1)" class="mavi"></div>
+	<div id="hucre32" onclick="tikKontrol(3,2)" class="mavi"></div>
+	<div id="hucre33" onclick="tikKontrol(3,3)" class="mavi"></div>
+	<div id="hucre34" onclick="tikKontrol(3,4)" class="mavi"></div>
+	<div id="hucre35" onclick="tikKontrol(3,5)" class="mavi"></div>
+	<div id="hucre36" onclick="tikKontrol(3,6)" class="mavi"></div>
+	<div id="hucre41" onclick="tikKontrol(4,1)" class="mavi"></div>
+	<div id="hucre42" onclick="tikKontrol(4,2)" class="mavi"></div>
+	<div id="hucre43" onclick="tikKontrol(4,3)" class="mavi"></div>
+	<div id="hucre44" onclick="tikKontrol(4,4)" class="mavi"></div>
+	<div id="hucre45" onclick="tikKontrol(4,5)" class="mavi"></div>
+	<div id="hucre46" onclick="tikKontrol(4,6)" class="mavi"></div>
+	<div id="hucre51" onclick="tikKontrol(5,1)" class="mavi"></div>
+	<div id="hucre52" onclick="tikKontrol(5,2)" class="mavi"></div>
+	<div id="hucre53" onclick="tikKontrol(5,3)" class="mavi"></div>
+	<div id="hucre54" onclick="tikKontrol(5,4)" class="mavi"></div>
+	<div id="hucre55" onclick="tikKontrol(5,5)" class="mavi"></div>
+	<div id="hucre56" onclick="tikKontrol(5,6)" class="mavi"></div>
+	
+</div>
+<table border="2px"><tr><td><div id="puan">0 Puan</div></td></tr></table>
+<br/>
+<img src="hak.jpeg"/>
+<div id="hak">3</div>
+<br/>
+<table border="2px"><tr><td><p><b>SKORLAR</b></p></td></tr></table>
+<table border="2px"><tr><td>
+<div id="p1"> </div>
+</td></tr></table>
+<table border="2px"><tr><td>
+<div id="p2"> </div>
+</td></tr></table>
+</center>
+</body>
+</html>
